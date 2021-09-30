@@ -24,10 +24,10 @@ import Menu from 'antd/lib/menu';
 import Dropdown from 'antd/lib/dropdown';
 import Modal from 'antd/lib/modal';
 import Text from 'antd/lib/typography/Text';
+import Image from 'antd/lib/image'
 
 import getCore from 'cvat-core-wrapper';
 import consts from 'consts';
-
 import { CVATLogo, AccountIcon } from 'icons';
 import ChangePasswordDialog from 'components/change-password-modal/change-password-modal';
 import { switchSettingsDialog as switchSettingsDialogAction } from 'actions/settings-actions';
@@ -258,7 +258,7 @@ function HeaderContainer(props: Props): JSX.Element {
     return (
         <Layout.Header className='cvat-header'>
             <div className='cvat-left-header'>
-                <Icon className='cvat-logo-icon' component={CVATLogo} />
+                <Image className='cv-logo' src='../../assets/brand-logo.png' alt="NXT"/>
                 <Button
                     className='cvat-header-button'
                     type='link'
